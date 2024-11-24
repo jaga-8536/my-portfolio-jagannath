@@ -1,0 +1,117 @@
+.maincontainer {
+    background: linear-gradient(to bottom, #57059e, #4a00e0);
+    height:100vh
+}
+
+.picture {
+    height: 40px;
+}
+
+.text {
+    font-size: 35px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: antiquewhite;
+
+}
+
+.text1 {
+    color: yellow;
+    position: relative;
+    display: contents;
+}
+
+.htmlicon {
+    height: 50px;
+    margin: 20px;
+    width: 50px;
+}
+
+
+
+.iconset {
+    box-sizing: content-box;
+    width: 70%;
+    height: 75%;
+    border: 0px solid #9100ff;
+    border-radius: 10px;
+    background-color: #2b0349;
+    position: relative;
+    top: 40px;
+    margin: auto;
+    height: 55vh;
+    padding: 26px;
+}
+
+.iconset1 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.captionhtml {
+    color: antiquewhite;
+    font-size: 23px;
+}
+
+.icon {
+    border-radius: 15px;
+    background: rgba(2, 2, 41, 0.9);
+    width: 150px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+
+    .iconset,
+    .icon1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        justify-content: center;
+    
+    }
+
+
+    .col-md-3 {
+        width: 45%;
+        /* Adjust to fit two in a row */
+        margin-bottom: 20px;
+        /* Space between rows */
+    }
+
+    .icon {
+        margin: 10px;
+        /* Add margin to create space around each icon */
+    }
+
+    .icon1 .icon {
+        margin: 20px
+            /* Ensure icon1 icons have the same margin */
+    }
+    .htmlicon{
+        height: 40px;
+        width: 40px;
+    }
+    .captionhtml{
+        font-size: 20px;
+    }
+
+}

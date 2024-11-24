@@ -1,0 +1,133 @@
+.maincontainer {
+    background-color: #d0d7dd;
+    padding: 13px;
+    height: 100vh;
+    
+}
+
+.logo {
+    width: 43px;
+    position: relative;
+    top: 10px;
+}
+
+.collagepicture {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    font-size: 39px;
+    font-family: system-ui;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text1 {
+    color: blueviolet;
+}
+
+.line {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.textcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 5px 1px;
+    width: 52%;
+    margin: 26px auto;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    line-height: 25px;
+}
+
+.innerimg {
+    width: 30%;
+    overflow: hidden;
+    border-radius: inherit;
+    background-image: url('../../assets/image/kp.jpg');
+    background-size: cover;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.innerimg2 {
+    background-image: url("../../assets/image/pvsn.jpg");
+}
+
+.innerimg3 {
+    background-image: url("../../assets/image/school.jpg");
+}
+
+.linebox {
+    width: 70%;
+    align-content: center;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+}
+
+.line1 {
+    font-family: system-ui;
+    font-size: 25px;
+    color: darkblue;
+}
+
+.line2 {
+    font-size: 17px;
+    font-family: sans-serif;
+    position: inherit;
+    bottom: 6px;
+}
+
+.line3 {
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 700;
+    color: #0c810c;
+}
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .maincontainer{
+        padding: 0;
+    }
+    .text {
+        font-size: 28px;
+    }
+
+    .textcontainer {
+        width: 90%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+
+    .innerimg {
+        width: 100%;
+        height: 134px;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .linebox {
+        width: 100%;
+      
+    }
+
+    .line1 {
+        font-size: 18px;
+    }
+
+    .line2 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .line3 {
+        font-size: 18px;
+    }
+}

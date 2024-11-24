@@ -1,0 +1,27 @@
+/* Main Container */
+.main {
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Header */
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header is above other elements */
+    background-color: #fff; /* Optional: add background to prevent transparency issues */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: for better design */
+}
+
+/* Individual Sections */
+.menulist {
+    min-height: 100vh;
+    // display: flex;
+    // justify-content: center
+    width: 100%;
+    // padding-top: 50px;
+}
+
+.submenu {
+    margin-top: 60px;
+}

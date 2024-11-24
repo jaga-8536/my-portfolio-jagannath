@@ -1,0 +1,67 @@
+
+
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.personlogo {
+    font-size: 30px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+
+}
+
+.text1 {
+    color: #4b078b;
+
+
+}
+
+.image {
+    height: 54vh;
+    box-shadow: 1px 1px 10px 1px;
+    border-radius: 5%;
+    position: relative;
+    left: 38%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.row {
+    align-items: center;
+    margin-top: 40px;
+}
+
+.image:hover {
+    filter: unset;
+    transform: rotate(5deg);
+}
+
+.email {
+    color: rgb(70, 59, 167);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+@media (max-width: 768px) {
+    .image{
+        height: 33vh;
+        left: 16%;
+    }
+    .text{
+        margin: 0;
+    }
+    .row{
+        margin-top: 20px;
+    }
+    p{
+        font-size: 14px;
+    }
+}

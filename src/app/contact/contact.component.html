@@ -1,0 +1,64 @@
+<div class="container " >
+    <div class="text">
+        <img class="picture" src="/assets/image/headset.png" alt="picture">
+        Get In <span class="text1">Touch</span>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img class="personimg" src="/assets/image/photo person.webp" alt="person">
+        </div>
+        <div class="col-md-6" style="margin-top: 10px;">
+            <div class="form">
+                <form #register="ngForm" (ngSubmit)="register.form.valid && onSubmit()">
+                    <!-- name Field -->
+                    <div class="form-item">
+                        <input type="text" id="name" name="name" autocomplete="off" required
+                               [(ngModel)]="form.name" #name="ngModel" maxlength="20"
+                               [ngClass]="{'is-invalid':  name.touched && name.errors}">
+                        <label for="name"><i class="bi bi-person-fill me-1"></i>Enter Your Name</label>
+                    </div>
+                    <div *ngIf=" name.touched && name.errors">
+                        <small class="text-danger" *ngIf="name.errors['required']">*Name is Required</small>
+                        <small class="text-danger" *ngIf="name.errors['maxlength']">*Only 20 characters allowed</small>
+                    </div>
+                
+                    <!-- Phone number Field -->
+                    <div class="form-item">
+                        <input type="text" id="number" name="number" autocomplete="off" required
+                               [(ngModel)]="form.number" #number="ngModel" maxlength="10"
+                               [ngClass]="{'is-invalid':  number.touched && number.errors}">
+                        <label for="number"><i class="bi bi-telephone-fill me-1"></i>Enter Phone number</label>
+                    </div>
+                    <div *ngIf=" number.touched && number.errors">
+                        <small class="text-danger" *ngIf="number.errors['required']">*Phone number is Required</small>
+                        <small class="text-danger" *ngIf="number.errors['maxlength']">*Enter a 10-digit Phone number</small>
+                    </div>
+                
+                    <!-- Email Field -->
+                    <div class="form-item">
+                        <input type="text" id="email" name="email" autocomplete="off" required
+                               [(ngModel)]="form.email" #email="ngModel"
+                               [ngClass]="{'is-invalid':  email.touched && email.errors}">
+                        <label for="email"><i class="bi bi-envelope-fill me-1"></i>Enter Your Email</label>
+                    </div>
+                    <div *ngIf=" email.touched && email.errors">
+                        <small class="text-danger" *ngIf="email.errors['required']">*Email is Required</small>
+                        <small class="text-danger" *ngIf="email.errors['maxlength']">*Enter a valid email</small>
+                    </div>               
+                    <div class="form-item">
+                        <input type="text" id="message" name="message" autocomplete="off" required [(ngModel)]="form.message" #message="ngModel" style="height:100px;">
+                        <label for="message"><i class="bi bi-envelope-fill me-1"></i>Enter Your Message</label>
+                    </div>
+                
+                    <!-- Submit Button -->
+                   
+                </form>
+                <button type="submit" (click)="onSubmit()" class="btn btn-outline-info" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="bi bi-send-check-fill me-2"></i>Submit 
+                  </button>
+                
+            </div>
+        </div>
+    </div>
+
+</div>

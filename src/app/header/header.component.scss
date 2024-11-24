@@ -1,0 +1,122 @@
+.menu a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+
+
+
+}
+
+.menu a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.menu li.active a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+    padding: 20px;
+
+}
+
+.headermenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    box-shadow: 0px 0px 3px 1px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.menulist {
+    display: none;
+}
+
+.logo img {
+    height: 74px;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+
+}
+
+@media (max-width: 768px) {
+    .menulist {
+        display: block;
+        font-size: 32px;
+        z-index: 1;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .menu a {
+        margin-left: 16px;
+        color: white;
+    }
+
+    .headermenu {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .headermenu.open .menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #0c0328;
+        position: absolute;
+        top: 60px;
+        width: 70%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        right: 0px;
+        height: 100vh;
+        animation: slideIn 0.3s ease-in-out;
+
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    /* Add smooth transitions */
+    .headermenu.open .menu {
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+
+
+}

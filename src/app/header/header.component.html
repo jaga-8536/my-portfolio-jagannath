@@ -1,0 +1,16 @@
+<header>
+  <div class="headermenu" [ngClass]="{'open': menu}">
+    <div class="logo">
+      <img src="../../assets/image/logo.png" alt="logo" />
+    </div>
+    <ul class="menu">
+      <li *ngFor="let item of menuItems" [ngClass]="{'active': activeMenu === item.section}"
+        (click)="setActiveMenu(item.section); scrollToSection(item.section)">
+        <a>{{ item.label }}</a>
+      </li>
+    </ul>
+    <div class="menulist" (click)="toggleMenu()">
+      <i class="bi bi-list"></i>
+    </div>
+  </div>
+</header>

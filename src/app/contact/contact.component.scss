@@ -1,0 +1,170 @@
+// .main-container{
+//    height: calc(100vh - 76px);
+// }
+
+
+.text {
+   text-align: center;
+   font-size: 38px;
+   font-family: system-ui;
+   font-weight: bold;
+   padding: 16px
+}
+
+.picture {
+   width: 39px;
+   position: relative;
+   top: 5px;
+
+}
+
+.text1 {
+   color: blueviolet;
+}
+
+.personimg {
+   width: 100%;
+   height: 70vh;
+}
+
+.errors {
+   border: 1px solid red;
+}
+
+.text-danger {
+   color: red;
+   position: relative;
+   bottom: 18px;
+   font-size: 12px;
+}
+
+.row {
+   align-items: center;
+}
+
+
+.form {
+
+   font-family: sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.form-item {
+   position: relative;
+   margin-bottom: 15px
+}
+
+.form-item input {
+   display: block;
+   width: 400px;
+   height: 40px;
+   background: transparent;
+   border: solid 1px #ccc;
+   transition: all .3s ease;
+   padding: 0 15px;
+   border-radius: 6px;
+}
+
+.form-item input:focus {
+   border-color: blue
+   
+}
+.form-item input:focus-visible{
+   outline: none;
+}
+.form-item label {
+   position: absolute;
+   cursor: text;
+   top: 13px;
+   left: 10px;
+   font-size: 12px;
+   font-weight: bold;
+   background: white;
+   padding: 0 10px;
+   color: #999;
+   transition: all .3s ease;
+
+}
+
+.form-item input:focus+label,
+.form-item input:valid+label {
+   font-size: 11px;
+   top: -8px;
+
+}
+
+.form-item input:focus+label {
+   color: blue
+}
+
+.form-item {
+   position: relative;
+   width: fit-content;
+}
+
+.floating-label-container {
+   position: relative;
+   width: fit-content;
+}
+
+/* Textarea styling */
+.form-textarea {
+   width: 100%;
+   padding: 12px;
+   font-size: 16px;
+   line-height: 1.5;
+   border: 1px solid #ccc;
+   border-radius: 6px;
+   resize: none;
+   background: none;
+   outline: none;
+   transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form-textarea:focus {
+   border-color: black;
+   background-color: #f8f9fa;
+}
+
+
+.floating-label {
+   position: absolute;
+   top: 50%;
+   left: 12px;
+   transform: translateY(-50%);
+   font-size: 16px;
+   color: #777;
+   pointer-events: none;
+   transition: all 0.3s ease;
+}
+
+.form-textarea:focus+.floating-label,
+.form-textarea:not(:placeholder-shown)+.floating-label {
+   top: 0;
+   transform: translateY(-50%);
+   font-size: 12px;
+   color: blue;
+   background-color: #fff;
+   padding: 0 5px;
+}
+
+
+@media (max-width: 768px){
+   .personimg{
+      height: auto;
+   
+   }
+   .text{
+      margin-top:30px ;
+
+   }
+   .row{
+      margin: 0;
+   
+   }
+   .form-item input{
+      width: 350px;
+   }
+}

@@ -1,0 +1,141 @@
+// /* Profile Image */
+.Photo {
+    width: 290px;
+    height: 302px;
+    border-radius: 50%;
+    border: inset;
+    box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+// /* Main Text Section */
+.maincontainer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    // position: absolute;
+    // left: 14%;
+    // height: calc(100vh - 76px);
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+    top: 60px;
+}
+
+// /* Text Styling */
+.text1 {
+    color: rgb(6, 6, 129);
+}
+
+.text2 {
+    color: black;
+    font-size: 25px;
+    margin-top: 26px;
+
+}
+
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-btn {
+    margin: 20px 0px 20px;
+}
+
+// /* Social Icons */
+.socialicon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa {
+    font-size: 23px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    color: aquamarine;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.text2 h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.typing {
+    color: rgb(37, 60, 178);
+    border-right: .15rem solid rgb(63, 5, 14);
+    font-size: 1em;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 6s steps(20, end) infinite forwards;
+
+}
+
+// @media (max-width: 1199.98px) {
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 52%;
+    }
+}
+
+// }
+
+@media (max-width: 768px) {
+    .maincontainer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: calc(100vh - 76px);
+        left: 0;
+        align-items: center;
+        position: relative;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
+
+    }
+
+
+    .Photo {
+        margin-top: 50px;
+    }
+
+    .typing {
+        font-size: 20px;
+    }
+
+    .text first-text {
+        font-size: 18px;
+    }
+
+
+    .socialicon {
+
+        gap: 8px;
+
+    }
+
+}
