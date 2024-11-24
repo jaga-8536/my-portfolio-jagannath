@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, HostListener } from '@angular/core';
+import { Component, AfterViewInit, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
@@ -8,7 +8,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class HeaderComponent {
   menu = false;
-
+  @ViewChild('targetElement', { static: false }) targetElement!: ElementRef;
   activeMenu: string = 'home';
   menuItems = [
     { label: 'Home', section: 'home' },
@@ -53,9 +53,11 @@ export class HeaderComponent {
   }
 
   setActiveMenu(section: string) {
+    
     this.activeMenu = section;
     this.router.navigate([section]);
     this.router.navigate(['/home'], { fragment: 'targetId' });
+    
   }
   @HostListener('window:scroll', [])
   onWindowScroll() {

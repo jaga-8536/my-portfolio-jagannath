@@ -8,6 +8,7 @@ import { HomeComponent} from './home/home.component';
 import { SkillComponent } from './skill/skill.component';
 
 
+
 const routes: Routes = [
 
   {
@@ -48,7 +49,7 @@ const routerOptions: ExtraOptions = {
 };
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,routerOptions)],
+  imports: [RouterModule.forRoot(routes,routerOptions )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
